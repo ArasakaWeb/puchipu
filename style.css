@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.header {
+    background-color: purple;
+    padding: 20px;
+    color: white;
+}
+
+.gallery {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photos img {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.photos img:hover {
+    transform: scale(2.0);
+    z-index: 2;
+}
+
+.calendar {
+    margin: 20px auto;
+    width: 80%;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.day {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.special-day {
+    background-color: #ffb3ba;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.special-day:after {
+    content: "❤️";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+}
